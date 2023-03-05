@@ -1,3 +1,5 @@
+"use strict";
+
 //                   HOMEWORK #5
 
 
