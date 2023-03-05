@@ -1,33 +1,43 @@
-//                   HOMEWORK #4
+//                   HOMEWORK #5
 
 
-// let num1 = prompt('First number');
-// num1 = Number(num1);
+//                          Task #1
+
+// let user = {};
+// user.name:"John",
+// user.surname:"Smith"
+// user.name = "Pete";
+// delete user.name;
+// console.log(user);
+
+
+//                          Task #2
+
+
+// const user = {
+//    name: "John"
+// };
 //
-// let num2 = prompt('Second number');
-// num2 = Number(num2);
+//  это будет работать?
 //
-// let operator = prompt('Operator (/,+,*,-)');
-// function calc(num1, num2, operator)  {
-//     switch (operator) {
-//         case '-':
-//             result = num1 - num2;
-//             break;
-//         case '+':
-//             result = num1 + num2;
-//             break;
-//         case '*':
-//             result = num1 * num2;
-//             break;
-//         case '/':
-//             result = num1 / num2;
-//             break;
-//         default:
+// user.name = "Pete";
+// console.log(user);
+
+//Да, это будет работать. Всё потому что const защищает от изменений только саму переменную user, а не её содержимое.
+
+
+//                          Task #3
+
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+// };
 //
-//             alert("Value is not defined!");
-//
-//     }
-//     return result;
+// let sum = 0;
+// for (let key in salaries) {
+//     sum += salaries[key];
 // }
-// calc(num1, num2, operator);
-// alert(` ${num1} ${operator} ${num2} = ${result}`);
+//
+// console.log(sum);
