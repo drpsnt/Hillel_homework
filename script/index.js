@@ -10,8 +10,8 @@ function add(a, b) {
     return a + b;
 }
 
-const result1 = add(a,b);
-console.log(`Результат: ${a} + ${b} = ${result1}`);
+const resultAdd = add(a,b);
+console.log(`Результат: ${a} + ${b} = ${resultAdd}`);
 
 
 
@@ -19,8 +19,8 @@ console.log(`Результат: ${a} + ${b} = ${result1}`);
      return a - b;
  }
 
-const result2 = sub(a,b);
- console.log(`Результат: ${a} - ${b} = ${result2}`);
+const resultSub = sub(a,b);
+ console.log(`Результат: ${a} - ${b} = ${resultSub}`);
 
 
 
@@ -30,8 +30,8 @@ const result2 = sub(a,b);
      return a * b;
  }
 
-const result3 = mul(a,b);
- console.log(`Результат: ${a} * ${b} = ${result3}`);
+const resultMul = mul(a,b);
+ console.log(`Результат: ${a} * ${b} = ${resultMul}`);
 
 
 
@@ -41,5 +41,5 @@ const result3 = mul(a,b);
      return a / b;
  }
 
-const result4 = div(a,b);
- console.log(`Результат: ${a} / ${b} = ${result4}`);
+const resultDiv = div(a,b);
+ console.log(`Результат: ${a} / ${b} = ${resultDiv}`);
