@@ -1,59 +1,44 @@
 //                   HOMEWORK #2 (2 промта, выводим результат в консоль)
 
 
-let a = prompt('First number');
- a = Number(a);
+const a = prompt('First number');
 
-let b = prompt('Second number');
- b = Number(b);
+const b = prompt('Second number');
+
 function add(a, b) {
-    return a + b;
+    return +a + +b;
 }
 
-let result = add(a,b);
-console.log(`Результат: ${a} + ${b} = ${result}`);
+const result1 = add(a,b);
+console.log(`Результат: ${a} + ${b} = ${result1}`);
+
+
+
+ function sub(a, b) {
+     return a - b;
+ }
+
+const result2 = sub(a,b);
+ console.log(`Результат: ${a} - ${b} = ${result2}`);
 
 
 
 
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function sub(a, b) {
-//     return a - b;
-// }
-//
-// let result = sub(a,b);
-// console.log(`Результат: ${a} - ${b} = ${result}`);
-//
-//
-//
-//
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function mul(a, b) {
-//     return a * b;
-// }
-//
-// let result = mul(a,b);
-// console.log(`Результат: ${a} * ${b} = ${result}`);
-//
-//
-//
-//
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function div(a, b) {
-//     return a / b;
-// }
-//
-// let result = div(a,b);
-// console.log(`Результат: ${a} / ${b} = ${result}`);
+
+ function mul(a, b) {
+     return a * b;
+ }
+
+const result3 = mul(a,b);
+ console.log(`Результат: ${a} * ${b} = ${result3}`);
+
+
+
+
+
+ function div(a, b) {
+     return a / b;
+ }
+
+const result4 = div(a,b);
+ console.log(`Результат: ${a} / ${b} = ${result4}`);
