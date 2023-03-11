@@ -1,59 +1,37 @@
-//                   HOMEWORK #2 (2 промта, выводим результат в консоль)
-
-
-let a = prompt('First number');
- a = Number(a);
-
-let b = prompt('Second number');
- b = Number(b);
-function add(a, b) {
-    return a + b;
-}
-
-let result = add(a,b);
-console.log(`Результат: ${a} + ${b} = ${result}`);
+'use strict';
 
 
 
+//                                       Task#1
 
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function sub(a, b) {
-//     return a - b;
-// }
-//
-// let result = sub(a,b);
-// console.log(`Результат: ${a} - ${b} = ${result}`);
-//
-//
-//
-//
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function mul(a, b) {
-//     return a * b;
-// }
-//
-// let result = mul(a,b);
-// console.log(`Результат: ${a} * ${b} = ${result}`);
-//
-//
-//
-//
-// let a = prompt('First number');
-// a = Number(a);
-//
-// let b = prompt('Second number');
-// b = Number(b);
-// function div(a, b) {
-//     return a / b;
-// }
-//
-// let result = div(a,b);
-// console.log(`Результат: ${a} / ${b} = ${result}`);
+
+
+console.log(Boolean(Number('10')) + 1);  //2
+console.log('sub' + Number(false));      //sub0
+console.log(16  *  '91');                     //1456
+console.log(true-70);                         //-69
+console.log(Number(1 + String(1)) + 1);     //12
+
+
+//                                      Task#2
+
+
+const h= 60*60;
+const a = prompt('First number');
+const n = a*h;
+alert(n);
+
+
+
+//                                       Task#3
+
+
+let num = 1;
+
+num += 12; //13
+num -= 14;  //-13
+num *= 5;   //5
+num /= 7;   //0.14285714285714285
+num ++;    //2
+num --;    //0
+alert(num);
