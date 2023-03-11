@@ -1,45 +1,41 @@
-//                   HOMEWORK #2 (2 промта, выводим результат в консоль)
+"use strict";
 
 
 const a = +prompt('First number');
 
 const b = +prompt('Second number');
 
+let x = true;
 
-function add(a, b) {
-    return a + b;
+
+function func(a, b) {
+    if(a == b) {
+        x = true;
+    } else {
+        x = false;
+    }
 }
-
-const resultAdd = add(a,b);
-console.log(`Результат: ${a} + ${b} = ${resultAdd}`);
-
+func(a,b);
+console.log(x);
 
 
- function sub(a, b) {
-     return a - b;
- }
-
-const resultSub = sub(a,b);
- console.log(`Результат: ${a} - ${b} = ${resultSub}`);
-
-
-
-
-
- function mul(a, b) {
-     return a * b;
- }
-
-const resultMul = mul(a,b);
- console.log(`Результат: ${a} * ${b} = ${resultMul}`);
+function func2(a, b) {
+    if((a + b) > 10) {
+        x = true;
+    } else {
+        x = false;
+    }
+}
+func2(a,b);
+console.log(x);
 
 
-
-
-
- function div(a, b) {
-     return a / b;
- }
-
-const resultDiv = div(a,b);
- console.log(`Результат: ${a} / ${b} = ${resultDiv}`);
+function func3(a) {
+    if(a < 0) {
+        x = true;
+    } else {
+        x = false;
+    }
+}
+func3(a,b);
+console.log(x);
