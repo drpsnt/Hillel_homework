@@ -1,12 +1,13 @@
 //                   HOMEWORK #2 (2 промта, выводим результат в консоль)
 
 
-const a = prompt('First number');
+const a = +prompt('First number');
 
-const b = prompt('Second number');
+const b = +prompt('Second number');
+
 
 function add(a, b) {
-    return +a + +b;
+    return a + b;
 }
 
 const result1 = add(a,b);
