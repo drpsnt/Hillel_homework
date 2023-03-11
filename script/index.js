@@ -1,6 +1,13 @@
 'use strict';
 
-const h= 60*60;
-const a = prompt('Enter number of hours');
-const n = a*h;
-alert(n);
+//1
+let num = 1;
+
+//2
+num += 12;
+
+//3
+num -= 14;
+
+//4
+num *= 5;
