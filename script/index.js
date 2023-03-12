@@ -1,41 +1,20 @@
 "use strict";
 
-
-const a = +prompt('First number');
-
-const b = +prompt('Second number');
-
-let x = true;
-
+let x;
 
 function func(a, b) {
-    if(a == b) {
-        x = true;
-    } else {
-        x = false;
-    }
+    return a === b;
 }
-func(a,b);
-console.log(x);
+console.log(func(2,2));   // true
 
 
 function func2(a, b) {
-    if((a + b) > 10) {
-        x = true;
-    } else {
-        x = false;
-    }
+    return (a + b) > 10;
 }
-func2(a,b);
-console.log(x);
+console.log(func2(2,9));  //true
 
 
 function func3(a) {
-    if(a < 0) {
-        x = true;
-    } else {
-        x = false;
-    }
+    return a < 0;
 }
-func3(a,b);
-console.log(x);
+console.log(func3(-2));    //true
