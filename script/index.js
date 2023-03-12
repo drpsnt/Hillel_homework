@@ -1,6 +1,6 @@
 "use strict";
 
-let x;
+
 
 function func(a, b) {
     return a === b;
