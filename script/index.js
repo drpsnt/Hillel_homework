@@ -1,9 +1,7 @@
 'use strict';
 
-// 1
 
 let number = prompt('Number:');
-console.log(typeof number);
 let year;
 
  if (isNaN(number)){
@@ -11,7 +9,6 @@ let year;
  }
  else if ( number[number.length - 1] === '1' ) {
      year = 'год';
-     console.log(typeof number);
      alert(`${number} ${year} `);
 
  } else  if ( number[number.length - 2] === '1' && number[number.length - 1] === '2' ||
