@@ -2,31 +2,35 @@
 
 // 1
 
-let userName = prompt('Your Name:');
+let number = prompt('Number:');
+console.log(typeof number);
+let year;
 
-if (userName === 'School' || userName === 'Hillel') {
-    alert( 'Welcome!' );
-} else {
-    alert( "Closed" );
-}
+ if (isNaN(number)){
+     alert('Error');
+ }
+ else if ( number[number.length - 1] === '1' ) {
+     year = 'год';
+     console.log(typeof number);
+     alert(`${number} ${year} `);
+
+ } else  if ( number[number.length - 2] === '1' && number[number.length - 1] === '2' ||
+     number[number.length - 2] === '1' && number[number.length - 1] === '3' ||
+     number[number.length - 2] === '1' && number[number.length - 1] === '4'
+ ) {
+     year = 'лет';
+     alert(`${number} ${year} `);
+
+ } else  if ( number[number.length - 1] === '2' || number[number.length - 1] === '3' || number[number.length - 1] === '4') {
+
+     year = 'года'
+     alert(`${number} ${year} `);
+
+ } else {
+     year = 'лет';
+     alert(`${number} ${year} `);
+ }
 
 
-// 2
 
 
-let numOrStr = prompt('input number or string');
-console.log(numOrStr);
-
-switch (numOrStr) {
-    case numOrStr === null:
-        console.log('вы отменили');
-        break;
-    case numOrStr.trim() === '':
-        console.log('Empty String');
-        break;
-    case isNaN( +numOrStr ):
-        console.log(' number is Ba_NaN')
-        break;
-    default:
-        console.log('OK!')
-}
