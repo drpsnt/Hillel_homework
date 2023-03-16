@@ -1,79 +1,71 @@
 'use strict';
 
-let a = prompt('Введите значение а', '');
+let a = +prompt('Введите значение а', '');
 
 // 1
 
 if (a === 0) {
-    alert( 'Верно!' );
+    console.log('Верно!' );
 } else {
-    alert( 'Неверно!' );
+    console.log( 'Неверно!' );
 }
+
 // 2
-let message = (a > 0) ? 'Верно!': 'Неверно!';
-alert(message);
+
+a > 0 ? console.log('Верно!') : console.log('Неверно!');
+
 
 // 3
 
 if (a < 0) {
-    alert( 'Верно!' );
+    console.log( 'Верно!' );
 } else {
-    alert( 'Неверно!' );
+    console.log( 'Неверно!' );
 }
 
 // 4
 
-let message = (a >= 0) ? 'Верно!': 'Неверно!';
-alert(message);
+a >= 0 ? console.log('Верно!') : console.log('Неверно!');
 
 // 5
 
 if (a <= 0) {
-    alert('Верно');
+    console.log( 'Верно!' );
 } else {
-    alert('Неверно');
+    console.log( 'Неверно!' );
 }
 
 // 6
 
-let message = (a !== 0) ? 'Верно!': 'Неверно!';
-alert(message);
+a !== 0 ? console.log('Верно!') : console.log('Неверно!');
+
 
 // 7
 
 if (a === 'test') {
-    alert('Верно');
+    console.log( 'Верно!' );
 } else {
-    alert('Неверно');
+    console.log( 'Неверно!' );
 }
 
 
 // 8
 
-let message = (a === 1) ? 'Верно!': 'Неверно!';
-alert(message);
+a === 1 ? console.log('Верно!') : console.log('Неверно!');
+
 
 // 9
 
 if (a > 0 && a < 5) {
-    alert('Верно');
+    console.log( 'Верно!' );
 } else {
-    alert('Неверно');
+    console.log( 'Неверно!' );
 }
 
 
 // 10
 
-let message = (a === 0 || a === 2) ? a += 7 : a /= 10 ;
-alert(message);
-
-if (+a === 0 || +a === 2) {
-    a = +a + 7;
-} else {
-    a = +a / 10;
-}
-alert(a);
-
+a === 0 || a === 2 ? console.log(a += 7) : console.log(a /= 10) ;
 
 
 // 11
@@ -98,17 +90,20 @@ if (c > 2 && c < 11 || b >=6 && b < 14) {
 
 // 13
 
-
-let result;
+const num = 1;
 switch (num) {
-    case 1: result = 'Зима';
+    case 1:
+        console.log('Зима');
         break;
-    case 2: result = 'Весна';
+    case 2:
+        console.log('Весна');
         break;
-    case 3: result = 'Лето';
+    case 3:
+        console.log('Лето');
         break;
-    case 4: result = 'Осень';
+    case 4:
+        console.log('Осень');
         break;
-    default : result = 'Неверное значение!';
+    default :
+        console.log('Неверное значение!');
 }
-console. log(result);
